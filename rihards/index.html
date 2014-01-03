@@ -6,10 +6,21 @@
 			<title>Rihards Rudzis</title>
 			<link rel="stylesheet" href="css/style.css">
 			<link rel="stylesheet" href="css/superslides.css">
+			<link rel="stylesheet" href="css/font-awesome.css">
 
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   			<script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
   			<script src="js/application.js"></script>
+  			<script src="js/okvideo.js"></script>
+  			<script type="text/javascript">
+    	 		$(function(){
+    	 		    $.okvideo({ source: 'https://vimeo.com/82495711', 
+    	 		                volume: 0, 
+    	 		                loop: true, 
+    	 		                adproof: false,
+    	 		             });
+    	 		});
+    	 	</script>
 	</head>
 	<body>
 		<div id="header">
@@ -19,24 +30,33 @@
 				<a href="#">BLOG</a>
 				<a href="#">ABOUT</a>
 				<a href="#">CONTACTS</a>
-				<a href="http://twitter.com/RihardsRudzis" target="blank"><img src="css/images/twitter.png" alt="twitter"></a>
-				<a href="http://instagram.com/richardrye" target="blank"><img src="css/images/instagram.png" alt="instagram"></a>
 			</nav>
 		</div>
 
 		<div class="clearfix"></div>
+		
+		
 
 		<div id="slides">
-  			<div class="slides-container">
+  			<!-- <div class="slides-container">
     			<img src="css/images/photo1.JPG" alt="photo">
     			<img src="css/images/photo2.JPG" alt="photo">
     			<img src="css/images/photo3.JPG" alt="photo">
     			<img src="css/images/photo4.JPG" alt="photo">
-  			</div>
+  			</div> -->
+  			<div id="socials">
+				<ul class="fa-ul">
+					<li class="fa-li"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li class="fa-li"><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+					<li class="fa-li"><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+					<li class="fa-li"><a href="#"><i class="fa fa-vimeo-square fa-2x"></i></a></li>
+				</ul>
+			</div>
 		</div>
 		
 		<div id="footer">
 			<span>Rihards Rudzis Photography / Copyrights 2014 / Contacts</span>
 		</div>
+
 	</body>
 </html>
