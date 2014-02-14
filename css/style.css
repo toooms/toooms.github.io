@@ -9,6 +9,11 @@ body, html {
 	font-family: 'PT Sans Caption', sans-serif;
 }
 
+#warning {
+	text-align: center;
+	margin: 50px;
+}
+
 /* icon font */
 @font-face { 
   font-family: 'foundicons';
