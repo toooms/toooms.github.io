@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Festive Vladimir</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.parallax.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	
+</head>
+<body>
+
+
+	<div class="parallax-viewport" id="parallax">
+		<div class="parallax-layer">
+			<img src="images/vladimir.png" alt="cat" width="350">
+		</div>
+	</div>
+<!-- <embed src="song.mp3" type="video/quicktime" autostart="true" loop="true" hidden="true" width="0" height="0"> -->
+<audio autoplay loop>
+      <source src="song.mp3">
+  </audio>
+<script>
+  		jQuery(document).ready(function(){
+  		  jQuery('#parallax .parallax-layer')
+  		  .parallax({
+  		    mouseport: jQuery('#parallax')
+  		  });
+  		});
+</script>
+</body>
+</html>
