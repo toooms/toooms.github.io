@@ -1,0 +1,20 @@
+.home-image {
+  height: calc(100% - (80px + 140px + 60px));
+  background: url(../img/bigimage.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .home-image .accordion .content {
+    background: rgba(255, 255, 255, 0.7); }
+  .home-image .accordion dd {
+    top: 50px;
+    left: 40px;
+    position: absolute; }
+    .home-image .accordion dd > a {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5em;
+      background: rgba(0, 0, 0, 0.5); }
+  .home-image img {
+    max-width: 100%; }

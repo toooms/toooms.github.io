@@ -1,0 +1,95 @@
+$lowenco-color: #00468e;
+$heightnav: 80px;
+$heightmenu: 140px;
+$heightfooter: 60px;
+@mixin middleHeight {
+	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
+}
+
+body, html {
+	height: 100%;
+	min-height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	p {
+		font-size: 14px;
+	}
+	h3 {
+	color: #333;
+	font-weight: bold;
+	font-size: 20px;
+}
+}
+
+button, .button {
+	background-color: $lowenco-color;
+}
+
+.top-bar {
+  background: #ccc;
+  height: 45px; }
+
+nav {
+	top: 0;
+  height: $heightnav;
+  padding: 20px;
+  border-bottom: 1px solid $lowenco-color;
+  a {
+  	font-size: 12px;
+  	margin-left: 15px;
+  } 
+}
+
+// PARTIALS
+@import "image";
+
+.menu {
+	display: block;
+	left: 0;
+	bottom: 0;
+	.menu-item {
+		// width: 25%;	
+		height: $heightmenu;
+		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+		border-right: 1px solid #ccc;
+		border-top: none;
+			i, span {
+			-webkit-font-smoothing: antialiased;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			color: $lowenco-color;
+			font-size: 4em;
+			padding-top: 20px;
+		}
+		&:not(:last-child) {
+		// border-right: none;
+		}
+		&:hover {
+			background-color: $lowenco-color;
+			// border-top: 5px solid white;
+			transition:.1s;
+			h3, i, span {
+				color:#fff;
+			}
+		}
+	}
+}
+
+footer {
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: absolute;
+	height: $heightfooter;
+	bottom: 0;
+	left: 0;
+	@media(max-width: 640px) {
+		position: relative;	
+	}
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	p, a {
+		color: #ccc;
+		font-size: 12px;
+		padding-left: 10px;
+	}
+}	

@@ -1,0 +1,35 @@
+$lowenco-color: #00468e;
+$heightnav: 80px;
+$heightmenu: 140px;
+$heightfooter: 60px;
+@mixin middleHeight {
+	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
+}
+.home-image {
+	@include middleHeight;
+	background: url(../img/bigimage.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    .accordion {
+      .content {
+        background: rgba(255, 255, 255, 0.7)
+      }
+      dd {
+        // width: 300px;
+        top: 50px;
+        left: 40px;
+        position: absolute;
+        > a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5em;
+        background: rgba(0, 0, 0, 0.5);
+        }
+      }  
+    }
+  	img {
+  	max-width:100%;	
+  	}
+}
