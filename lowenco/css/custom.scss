@@ -1,7 +1,7 @@
 $lowenco-color: #00468e;
 $heightnav: 80px;
 $heightmenu: 140px;
-$heightfooter: 60px;
+$heightfooter: 50px;
 @mixin middleHeight {
 	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
 }
@@ -76,12 +76,12 @@ nav {
 }
 
 footer {
-	padding-top: 25px;
+	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
 	position: absolute;
 	height: $heightfooter;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 	@media(max-width: 640px) {
 		position: relative;	
