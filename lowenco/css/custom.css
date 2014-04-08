@@ -22,8 +22,9 @@ nav {
   padding: 20px;
   border-bottom: 1px solid #00468e; }
   nav a {
-    font-size: 12px;
-    margin-left: 15px; }
+    font-size: 12px; }
+    nav a:not(:first-child) {
+      margin-left: 15px; }
 
 .home-image {
   height: calc(100% - (80px + 140px + 60px));
@@ -46,6 +47,86 @@ nav {
   .home-image img {
     max-width: 100%; }
 
+.about {
+  height: calc(100% - (80px + 140px + 60px));
+  padding-top: 0px; }
+  .about .description {
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px; }
+    .about .description .writer {
+      font-style: italic;
+      font-size: 0.9em; }
+    .about .description p {
+      margin-right: 50px; }
+  .about .vertical {
+    padding: 20px 0 0 0; }
+  .about .tabs-content {
+    padding-top: 10px; }
+  .about .tabs dd {
+    border-bottom: 1px solid #eee; }
+    .about .tabs dd > a {
+      background-color: white; }
+    .about .tabs dd.active {
+      border-left: 5px solid #00468e; }
+  .about .tabs dd > a:hover {
+    background-color: white; }
+  .about .content img {
+    padding: 15px 35px 0 20px; }
+  .about .mobile-nav {
+    display: inline;
+    list-style: none;
+    border-bottom: none; }
+    .about .mobile-nav .button {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #00468e;
+      border-radius: 3px; }
+    .about .mobile-nav .panel1a {
+      width: 32%; }
+    .about .mobile-nav .panel2a {
+      width: 32%; }
+    .about .mobile-nav .panel3a {
+      width: 32%; }
+  @media (min-width: 700px) {
+    .about .mobile-section {
+      display: none; } }
+  @media (max-width: 1024px) {
+    .about .description {
+      padding-left: 20px; }
+    .about .content img {
+      display: none;
+      padding: 10px 0px 5px 0px; } }
+  @media (max-width: 700px) {
+    .about .writer {
+      font-weight: 400;
+      font-style: italic; }
+    .about .tabs {
+      display: none; }
+    .about .tabs-content .description {
+      display: none; }
+    .about .mobile-section .mobile-description {
+      margin-right: 0px; } }
+
+.products {
+  height: calc(100% - (80px + 140px + 60px)); }
+  .products .tabs-content.vertical {
+    width: 70%; }
+    .products .tabs-content.vertical .content {
+      padding: 1;
+      width: 100%; }
+  .products .tabs dd a {
+    background-color: #fff;
+    border-bottom: 1px solid #eee; }
+    .products .tabs dd a:hover {
+      background-color: #eee; }
+  .products .tabs dd.active a {
+    border-left: 5px solid #00468e; }
+  .products .tabs.vertical {
+    width: 30%; }
+
 .menu {
   display: block;
   left: 0;
@@ -65,10 +146,10 @@ nav {
       color: #00468e;
       font-size: 4em;
       padding-top: 20px; }
-    .menu .menu-item:hover {
+    .menu .menu-item:hover, .menu .menu-item:active {
       background-color: #00468e;
       transition: .1s; }
-      .menu .menu-item:hover h3, .menu .menu-item:hover i, .menu .menu-item:hover span {
+      .menu .menu-item:hover h3, .menu .menu-item:hover i, .menu .menu-item:hover span, .menu .menu-item:active h3, .menu .menu-item:active i, .menu .menu-item:active span {
         color: #fff; }
 
 footer {

@@ -31,16 +31,51 @@ button, .button {
 nav {
 	top: 0;
   height: $heightnav;
-  padding: 20px;
+  // line-height: 80px;
+  padding:20px;
   border-bottom: 1px solid $lowenco-color;
   a {
   	font-size: 12px;
-  	margin-left: 15px;
+  	&:not(:first-child){
+  		margin-left: 15px;
+  	}
   } 
 }
 
 // PARTIALS
 @import "image";
+@import "about";
+
+.products {
+	@include middleHeight;
+	.tabs-content.vertical {
+		width: 70%;
+		.content {
+			padding: 1;
+			width: 100%;
+		}
+	}
+	.tabs {
+		dd {
+			a {
+				background-color: #fff;
+				border-bottom: 1px solid #eee;
+				&:hover {
+					background-color: #eee;
+				}
+			}
+			&.active {
+				a {
+					border-left: 5px solid $lowenco-color;
+				}
+			}
+		}
+		&.vertical {
+			width: 30%;
+
+		}
+	}
+}
 
 .menu {
 	display: block;
@@ -64,7 +99,7 @@ nav {
 		&:not(:last-child) {
 		// border-right: none;
 		}
-		&:hover {
+		&:hover, &:active {
 			background-color: $lowenco-color;
 			// border-top: 5px solid white;
 			transition:.1s;

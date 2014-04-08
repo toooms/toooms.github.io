@@ -13,7 +13,7 @@
   <body>
     <nav class="row">
       <div class="left">
-        <a href="#"><img src="img/logo.png" alt="logo"></a>
+        <a href="index.html"><img data-interchange="[img/logo_mobile.png, (default)], [img/logo.png, (medium)]" alt="logo"></a>
       </div>
       <div class="right">
         <a href="#" class="button [tiny small radius round]">Log In</a>
@@ -26,25 +26,72 @@
       </div>
     </nav>
 
-    <div class="products">
+    <div class="row products"> 
+      <div class="tabs-content vertical ">
+        <div class="content active" id="panel1a">
+         <!--  <p>Panel 1 content goes here.</p> -->
+         <div class="container-info">
+           <h3>Medical container</h3>
+           <p>Gotham's been good to our family, but the city's been suffering. People less fortunate than us have been enduring very hard times. So we built a new, cheap, public transportation system to unite the city. And at the center, Wayne tower. I see a beautiful city and the brilliant people rising from this abyss. I see the lives, for which I lay down my life. Peaceful, useful, prosperous and happy. I see that I hold a sanctuary in their hearts and in the hearts of their descendents. Generations ends. That is the far, far better thing that I do than I have ever done. That is a far, far better rest that I go to than I have ever known.</p>
 
+           <img class="hide-for-small" src="img/bigimage.jpg" alt="container" width="400">
+         </div>
+        </div>    
+        <div class="content" id="panel2a">
+          <!-- <p>Panel 2 content goes here.</p> -->
+           <div class="container-info">
+           <h3>Agroculture container</h3>
+           <p>Gotham's been good to our family, but the city's been suffering. People less fortunate than us have been enduring very hard times. So we built a new, cheap, public transportation system to unite the city. And at the center, Wayne tower. I see a beautiful city and the brilliant people rising from this abyss. I see the lives, for which I lay down my life. Peaceful, useful, prosperous and happy. I see that I hold a sanctuary in their hearts and in the hearts of their descendents. Generations ends. That is the far, far better thing that I do than I have ever done. That is a far, far better rest that I go to than I have ever known.</p>
+
+           <img src="img/bigimage.jpg" alt="container" width="400">
+         </div>
+        </div>
+        <div class="content" id="panel3a">
+          <!-- <p>Panel 3 content goes here.</p> -->
+           <div class="container-info">
+           <h3>Military container</h3>
+           <p>Gotham's been good to our family, but the city's been suffering. People less fortunate than us have been enduring very hard times. So we built a new, cheap, public transportation system to unite the city. And at the center, Wayne tower. I see a beautiful city and the brilliant people rising from this abyss. I see the lives, for which I lay down my life. Peaceful, useful, prosperous and happy. I see that I hold a sanctuary in their hearts and in the hearts of their descendents. Generations ends. That is the far, far better thing that I do than I have ever done. That is a far, far better rest that I go to than I have ever known.</p>
+
+           <img src="img/bigimage.jpg" alt="container" width="400">
+         </div>
+        </div>
+        <div class="content" id="panel4a">
+          <!-- <p>Panel 4 content goes here.</p> -->
+           <div class="container-info">
+           <h3>Custom orders</h3>
+           <p>Gotham's been good to our family, but the city's been suffering. People less fortunate than us have been enduring very hard times. So we built a new, cheap, public transportation system to unite the city. And at the center, Wayne tower. I see a beautiful city and the brilliant people rising from this abyss. I see the lives, for which I lay down my life. Peaceful, useful, prosperous and happy. I see that I hold a sanctuary in their hearts and in the hearts of their descendents. Generations ends. That is the far, far better thing that I do than I have ever done. That is a far, far better rest that I go to than I have ever known.</p>
+
+           <img src="img/bigimage.jpg" alt="container" width="400">
+         </div>
+        </div>
+      </div>
+      <dl class="tabs vertical" data-tab>
+        <dd class="active"><a href="#panel1a"><i class="fa fa-twitter"></i> Medical</a></dd>
+        <dd><a href="#panel2a"><i class="fa fa-info"></i> Agroculture</a></dd>
+        <dd><a href="#panel3a"><i class="fa fa-gear"></i> Military</a></dd>
+        <dd><a href="#panel4a"><i class="fa fa-file"></i> Custom</a></dd>
+      </dl>
     </div>
 
     <div class="menu row">
       <div class="menu-item text-center small-6 medium-3 columns">
-        <i class="fa fa-suitcase"></i>
+        <!-- <i class="fa fa-suitcase"></i> -->
+        <span class="icon-container"></span>
         <h3>Product</h3>
       </div>
       <div class="menu-item text-center small-6 medium-3 columns">
         <i class="fa fa-sitemap"></i>
+        <!-- <span class="icon-modelguide"></span> -->
         <h3>Model Guide</h3>
       </div>
       <div class="menu-item text-center small-6 medium-3 columns">
-        <i class="fa fa-map-marker"></i>
+        <!-- <i class="fa fa-map-marker"></i> -->
+        <span class="icon-map"></span>
         <h3>Find Dealers</h3>
       </div>
       <div class="menu-item text-center small-6 medium-3 columns">
         <i class="fa fa-info"></i>
+        <!-- <span class="icon-Info"></span> -->
         <h3>About</h3>
       </div>
     </div>

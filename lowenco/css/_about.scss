@@ -1,0 +1,135 @@
+//about section
+$lowenco-color: #00468e;
+$heightnav: 80px;
+$heightmenu: 140px;
+$heightfooter: 60px;
+@mixin middleHeight {
+	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
+}
+
+
+.about {
+	@include middleHeight;
+	padding-top: 0px;
+
+	.description {
+		padding-top: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
+			.writer {
+				font-style: italic;
+				font-size: 0.9em;
+			}
+			p {
+				margin-right: 50px;
+			}
+
+
+	}
+
+	.vertical {
+		padding: 20px 0 0 0;
+	}
+
+	.tabs-content{
+		padding-top: 10px;
+		}
+
+	.tabs dd{
+		border-bottom: 1px solid #eee;
+
+		 > a {
+		background-color: white;
+		}
+			&.active{
+			
+				border-left: 5px solid $lowenco-color;
+			
+			}
+	}
+
+
+
+	.tabs dd > a:hover {
+		background-color: white;
+
+	}
+
+	.content {
+		img {
+			padding: 15px 35px 0 20px;
+		}
+	}
+
+	.mobile-nav {
+		display: inline;
+		list-style: none;
+		border-bottom: none;
+
+			.button {
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 16px;
+			font-weight: 500;
+			background-color: $lowenco-color;
+			border-radius: 3px;
+				
+			}
+			
+			.panel1a {
+				width: 32%
+			}
+			.panel2a {
+				width: 32%
+			}
+			.panel3a {
+				width: 32%
+			}
+	}
+
+
+
+
+	@media (min-width: 700px) {
+		.mobile-section {
+			display: none;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.description {
+			padding-left: 20px;
+		}
+
+		.content {
+			img {
+				display: none;
+				padding: 10px 0px 5px 0px ;
+			}
+		}
+	}
+
+	@media (max-width: 700px) {
+		.writer {
+				font-weight: 400;
+				font-style: italic;
+			}
+		.tabs {
+			display: none;
+		}
+		.tabs-content .description {
+			display: none;
+					
+				}
+
+		.mobile-section {
+
+			.mobile-description {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+//about END
+
