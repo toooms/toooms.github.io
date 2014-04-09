@@ -155,10 +155,9 @@ nav {
 
 .gmap {
   height: 400px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 3px;
-  border: 5px solid #ddd;
   font-size: 90%; }
 
 .menu {
