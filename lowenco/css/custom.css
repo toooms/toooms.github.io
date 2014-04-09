@@ -160,7 +160,8 @@ nav {
     .generator .generator-box > div {
       height: auto; }
     .generator .generator-box .tabs dd > a {
-      padding: 15px 25px; }
+      padding: 1rem 1.5rem;
+      font-size: .8rem; }
 
 footer {
   padding-top: 30px;
