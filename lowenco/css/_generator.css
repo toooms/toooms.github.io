@@ -1,0 +1,23 @@
+.generator {
+  height: calc(100% - (80px + 140px + 60px)); }
+  .generator .generator-box {
+    height: auto; }
+    .generator .generator-box h3 {
+      padding-top: 5px; }
+    .generator .generator-box > div {
+      height: auto; }
+      .generator .generator-box > div.right {
+        padding-left: 80px; }
+    .generator .generator-box #show {
+      display: none; }
+      .generator .generator-box #show p {
+        margin: 0; }
+      .generator .generator-box #show span {
+        font-size: 2em;
+        color: #00468e;
+        cursor: pointer; }
+    .generator .generator-box .tabs dd.active {
+      border-bottom: 1px solid #00468e; }
+    .generator .generator-box .tabs dd > a {
+      padding: 1rem 1.5rem;
+      font-size: .8rem; }

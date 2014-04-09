@@ -32,7 +32,9 @@
           <h3>Model Guide</h3>
           <p>Generate your container model number</p>
           <p>Here you can select all variations for your container. After selection you will be able to download .pdf file with all the necessary information.</p>
-          <a href="#">Read more about container specifications.</a>
+          <p>When their enemies were at the gates the Romans would suspend democracy and appoint one man to protect the city. It wasn't considered an honor, it was a public service.</p>
+          <a href="product.html">Read more about container specifications.</a>
+          <!-- <p>When their enemies were at the gates the Romans would suspend democracy and appoint one man to protect the city. It wasn't considered an honor, it was a public service.</p> -->
         </div>
         <div class="right medium-8 columns">
           <h2>CON20-<span id="print1">__</span>-<span id="print2">__</span>-<span id="print3">__</span>-<span id="print4">__</span>-<span id="print5">__</span></h2>
@@ -51,7 +53,7 @@
               <div class="progress small-4 success round">
                 <span class="meter" style="width: 20%"></span>
               </div>
-              <p>First panel content goes here...</p>
+              <p>Select temperature unit and move to next step</p>
               <!-- <input type="button" id="btnGetValue" Value="Select" /> -->
               <form name="temp" action="">
                 <input type="radio" name="temp" value="00" id="1"> 00 = +1C storage temp.<br>
@@ -64,7 +66,7 @@
               <div class="progress small-4 success round">
                 <span class="meter" style="width: 40%"></span>
               </div>
-              <p>Second panel content goes here...</p>
+            
               <!-- <input type="button" id="btnGetValue" Value="Select" /> -->
               <form name="comp" action="">
                 <input type="radio" name="comp" value="S" id="a1"> S = Single Compressor<br>
@@ -75,9 +77,8 @@
               <div class="progress small-4 success round">
                 <span class="meter" style="width: 60%"></span>
               </div>
-              <p>Third panel content goes here...</p>
               <form name="enviro">
-                <input type="radio" name="enviro" value="N" id="#"> N = 30C abmient<br>
+                <input type="radio" name="enviro" value="N" id="#"> N = 30C ambient<br>
                 <input type="radio" name="enviro" value="H" id="#"> H = 45C ambient<br>
                 <input type="radio" name="enviro" value="X" id="#"> X = 55C ambient<br>
               </form>
@@ -104,8 +105,13 @@
                 <input type="radio" name="config" value="10" id="#"> 10 = Standart configuration<br>
                 <input type="radio" name="config" value="20" id="#"> 20 = GMP configuration<br>
               </form>
-              <span class="icon-Downloadfile" style="font-size:3em;"></span>
-              <p>Download or open this .pdf file in browser to see all the details,<br> specifications and price about your selected container model.</p>
+              <div id="show">
+                <p>Download or open this .pdf file in browser to see all the details,<br> specifications and price about your selected container model.</p>
+                <hr>
+                <p class="small-4 columns"><span class=" icon-Downloadfile"></span>Download PDF</p>
+                <p class="small-4 columns"><span class=" icon-Videotuts"></span>Watch video tutorial</p>
+                <p class="small-4 columns">Find your closest dealer <a href="#">here:</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -115,24 +121,28 @@
 
     <div class="menu row">
       <div class="menu-item text-center small-6 medium-3 columns">
-        <!-- <i class="fa fa-suitcase"></i> -->
+        <a href="product.html"><!-- <i class="fa fa-suitcase"></i> -->
         <span class="icon-container"></span>
         <h3>Product</h3>
+        </a>
       </div>
       <div class="menu-item text-center small-6 medium-3 columns">
-        <i class="fa fa-sitemap"></i>
+        <a href="generator.html"><i class="fa fa-sitemap"></i>
         <!-- <span class="icon-modelguide"></span> -->
         <h3>Model Guide</h3>
+        </a>
       </div>
       <div class="menu-item text-center small-6 medium-3 columns">
-        <!-- <i class="fa fa-map-marker"></i> -->
+        <a href="#"><!-- <i class="fa fa-map-marker"></i> -->
         <span class="icon-map"></span>
         <h3>Find Dealers</h3>
+        </a>
       </div>
       <div class="menu-item text-center small-6 medium-3 columns">
-        <i class="fa fa-info"></i>
+        <a href="about.html"><i class="fa fa-info"></i>
         <!-- <span class="icon-Info"></span> -->
         <h3>About</h3>
+        </a>
       </div>
     </div>
 
@@ -187,6 +197,7 @@
     <script> // fifth selection
       $(document).ready(function(){
         $('input[name=config]').click(function() { // was #btnGetValue for button
+          $("#show").show();
           var selValue = $('input[name=config]:checked').val();
           $('span#print5').html(selValue);
         });

@@ -1,0 +1,46 @@
+$lowenco-color: #00468e;
+$heightnav: 80px;
+$heightmenu: 140px;
+$heightfooter: 60px;
+@mixin middleHeight {
+	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
+}
+
+.generator {
+	@include middleHeight;
+	.generator-box {
+		h3 {
+			padding-top: 5px;
+		}
+		height: auto;
+		> div {
+			height: auto;
+			&.right {
+				padding-left: 80px;
+			}
+		}
+		#show {
+			display: none;
+			p {
+				margin: 0;
+			}
+			span {
+				font-size: 2em;
+				color: $lowenco-color;
+				cursor: pointer;
+			}
+		}
+		.tabs {
+			dd {
+				&.active {
+						border-bottom: 1px solid $lowenco-color;
+					}
+				> a {
+					padding: 1rem 1.5rem;
+					font-size: .8rem;
+					
+				}
+			} 
+		}
+	}
+}

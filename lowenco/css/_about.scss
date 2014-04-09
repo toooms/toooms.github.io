@@ -6,8 +6,6 @@ $heightfooter: 60px;
 @mixin middleHeight {
 	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
 }
-
-
 .about {
 	@include middleHeight;
 	padding-top: 0px;
@@ -23,84 +21,48 @@ $heightfooter: 60px;
 			p {
 				margin-right: 50px;
 			}
-
-
 	}
-
 	.vertical {
 		padding: 20px 0 0 0;
 	}
-
 	.tabs-content{
 		padding-top: 10px;
 		}
-
 	.tabs dd{
-		border-bottom: 1px solid #eee;
-
-		 > a {
-		background-color: white;
+		.product-icon {
+			font-size: 30px;
+			margin-right: 20px;
 		}
-			&.active{
-			
-				border-left: 5px solid $lowenco-color;
-			
+		.product-icon-special {
+			font-size: 32px;
+			margin-right: 18px;
+		}
+
+		border-bottom: 1px solid #eee;
+			> a:hover {
+			background-color: white;
 			}
+			> a {
+			background-color: white;
+			}
+				&.active{
+					border-left: 5px solid $lowenco-color;
+				}
 	}
-
-
-
-	.tabs dd > a:hover {
-		background-color: white;
-
-	}
-
 	.content {
 		img {
 			padding: 15px 35px 0 20px;
 		}
 	}
-
-	.mobile-nav {
-		display: inline;
-		list-style: none;
-		border-bottom: none;
-
-			.button {
-			padding-left: 10px;
-			padding-right: 10px;
-			font-size: 16px;
-			font-weight: 500;
-			background-color: $lowenco-color;
-			border-radius: 3px;
-				
-			}
-			
-			.panel1a {
-				width: 32%
-			}
-			.panel2a {
-				width: 32%
-			}
-			.panel3a {
-				width: 32%
-			}
-	}
-
-
-
-
 	@media (min-width: 700px) {
 		.mobile-section {
 			display: none;
 		}
 	}
-
 	@media (max-width: 1024px) {
 		.description {
 			padding-left: 20px;
 		}
-
 		.content {
 			img {
 				display: none;
@@ -108,7 +70,6 @@ $heightfooter: 60px;
 			}
 		}
 	}
-
 	@media (max-width: 700px) {
 		.writer {
 				font-weight: 400;
@@ -118,12 +79,9 @@ $heightfooter: 60px;
 			display: none;
 		}
 		.tabs-content .description {
-			display: none;
-					
+			display: none;	
 				}
-
 		.mobile-section {
-
 			.mobile-description {
 				margin-right: 0px;
 			}
@@ -132,4 +90,3 @@ $heightfooter: 60px;
 }
 
 //about END
-

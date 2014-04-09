@@ -1,71 +1,61 @@
+//about section
 $lowenco-color: #00468e;
 $heightnav: 80px;
 $heightmenu: 140px;
 $heightfooter: 60px;
 @mixin middleHeight {
-	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter})) ;
+	height: calc(100% - (#{$heightnav} + #{$heightmenu} + #{$heightfooter}));
 }
-
-.products {
+.product {
 	@include middleHeight;
-	.tabs-content.vertical {
-		width: 70%;
-		.content {
-			padding: 1;
-			width: 100%;
+	padding-top: 0px;
+
+	.description {
+		padding-top: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
+}
+	.content {
+		.product-picture {
+			padding-right: 0px;
+		}
+		.product-description {
+			p {
+				margin-bottom: 0px;
+				padding-bottom: 8px;
+			}
+		.second-product-description {
+
+		}
 		}
 	}
-	.tabs {
-		dd {
-			a {
-				background-color: #fff;
-				border-bottom: 1px solid #eee;
-				&:hover {
-					background-color: #eee;
-				}
+	.vertical {
+		padding: 20px 0 0 0;
+	}
+	.tabs-content{
+		padding-top: 10px;
+		padding-right: 56px;
+		margin-bottom: 0px;
+		}
+
+	.tabs dd{
+		.product-icon {
+			font-size: 30px;
+			margin-right: 20px;
+		}
+			border-bottom: 1px solid #eee;
+			> a:hover {
+			background-color: white;
 			}
-			&.active {
-				a {
+
+			> a {
+			background-color: white;
+			}
+				&.active{
 					border-left: 5px solid $lowenco-color;
 				}
-			}
-		}
-		&.vertical {
-			width: 30%;
-
-		}
 	}
-}
+}	
 
-.menu {
-	display: block;
-	left: 0;
-	bottom: 0;
-	.menu-item {
-		// width: 25%;	
-		height: $heightmenu;
-		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-		border-right: 1px solid #ccc;
-		border-top: none;
-			i, span {
-			-webkit-font-smoothing: antialiased;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			display: inline-block;
-			color: $lowenco-color;
-			font-size: 4em;
-			padding-top: 20px;
-		}
-		&:not(:last-child) {
-		// border-right: none;
-		}
-		&:hover, &:active {
-			background-color: $lowenco-color;
-			// border-top: 5px solid white;
-			transition:.1s;
-			h3, i, span {
-				color:#fff;
-			}
-		}
-	}
-}
+			
+//Product aboutEND

@@ -2,7 +2,7 @@ body, html {
   height: 100%;
   min-height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  body p, html p {
+  body p, body a, html p, html a {
     font-size: 14px; }
   body h3, html h3 {
     color: #333;
@@ -65,31 +65,20 @@ nav {
     padding-top: 10px; }
   .about .tabs dd {
     border-bottom: 1px solid #eee; }
+    .about .tabs dd .product-icon {
+      font-size: 30px;
+      margin-right: 20px; }
+    .about .tabs dd .product-icon-special {
+      font-size: 32px;
+      margin-right: 18px; }
+    .about .tabs dd > a:hover {
+      background-color: white; }
     .about .tabs dd > a {
       background-color: white; }
     .about .tabs dd.active {
       border-left: 5px solid #00468e; }
-  .about .tabs dd > a:hover {
-    background-color: white; }
   .about .content img {
     padding: 15px 35px 0 20px; }
-  .about .mobile-nav {
-    display: inline;
-    list-style: none;
-    border-bottom: none; }
-    .about .mobile-nav .button {
-      padding-left: 10px;
-      padding-right: 10px;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: #00468e;
-      border-radius: 3px; }
-    .about .mobile-nav .panel1a {
-      width: 32%; }
-    .about .mobile-nav .panel2a {
-      width: 32%; }
-    .about .mobile-nav .panel3a {
-      width: 32%; }
   @media (min-width: 700px) {
     .about .mobile-section {
       display: none; } }
@@ -110,22 +99,59 @@ nav {
     .about .mobile-section .mobile-description {
       margin-right: 0px; } }
 
-.products {
-  height: calc(100% - (80px + 140px + 60px)); }
-  .products .tabs-content.vertical {
-    width: 70%; }
-    .products .tabs-content.vertical .content {
-      padding: 1;
-      width: 100%; }
-  .products .tabs dd a {
-    background-color: #fff;
+.product {
+  height: calc(100% - (80px + 140px + 60px));
+  padding-top: 0px; }
+  .product .description {
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .product .content .product-picture {
+    padding-right: 0px; }
+  .product .content .product-description p {
+    margin-bottom: 0px;
+    padding-bottom: 8px; }
+  .product .vertical {
+    padding: 20px 0 0 0; }
+  .product .tabs-content {
+    padding-top: 10px;
+    padding-right: 56px;
+    margin-bottom: 0px; }
+  .product .tabs dd {
     border-bottom: 1px solid #eee; }
-    .products .tabs dd a:hover {
-      background-color: #eee; }
-  .products .tabs dd.active a {
-    border-left: 5px solid #00468e; }
-  .products .tabs.vertical {
-    width: 30%; }
+    .product .tabs dd .product-icon {
+      font-size: 30px;
+      margin-right: 20px; }
+    .product .tabs dd > a:hover {
+      background-color: white; }
+    .product .tabs dd > a {
+      background-color: white; }
+    .product .tabs dd.active {
+      border-left: 5px solid #00468e; }
+
+.generator {
+  height: calc(100% - (80px + 140px + 60px)); }
+  .generator .generator-box {
+    height: auto; }
+    .generator .generator-box h3 {
+      padding-top: 5px; }
+    .generator .generator-box > div {
+      height: auto; }
+      .generator .generator-box > div.right {
+        padding-left: 80px; }
+    .generator .generator-box #show {
+      display: none; }
+      .generator .generator-box #show p {
+        margin: 0; }
+      .generator .generator-box #show span {
+        font-size: 2em;
+        color: #00468e;
+        cursor: pointer; }
+    .generator .generator-box .tabs dd.active {
+      border-bottom: 1px solid #00468e; }
+    .generator .generator-box .tabs dd > a {
+      padding: 1rem 1.5rem;
+      font-size: .8rem; }
 
 .menu {
   display: block;
@@ -152,17 +178,6 @@ nav {
       .menu .menu-item:hover h3, .menu .menu-item:hover i, .menu .menu-item:hover span, .menu .menu-item:active h3, .menu .menu-item:active i, .menu .menu-item:active span {
         color: #fff; }
 
-.generator {
-  height: calc(100% - (80px + 140px + 60px));
-  margin: 0 20px 0 20px; }
-  .generator .generator-box {
-    height: auto; }
-    .generator .generator-box > div {
-      height: auto; }
-    .generator .generator-box .tabs dd > a {
-      padding: 1rem 1.5rem;
-      font-size: .8rem; }
-
 footer {
   padding-top: 30px;
   padding-left: 20px;
@@ -174,7 +189,7 @@ footer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     footer {
       position: relative; } }
   footer p, footer a {
