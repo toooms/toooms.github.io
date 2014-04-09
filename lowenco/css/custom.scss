@@ -55,8 +55,10 @@ nav {
 		> div {
 			height: auto;
 		}
-		.tabs-content {
-			
+		.tabs {
+			dd > a {
+				padding: 15px 25px;
+			} 
 		}
 	}
 }
