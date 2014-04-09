@@ -153,6 +153,14 @@ nav {
       padding: 1rem 1.5rem;
       font-size: .8rem; }
 
+.gmap {
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px;
+  border: 5px solid #ddd;
+  font-size: 90%; }
+
 .menu {
   display: block;
   left: 0;
