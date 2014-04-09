@@ -152,6 +152,14 @@ nav {
       .menu .menu-item:hover h3, .menu .menu-item:hover i, .menu .menu-item:hover span, .menu .menu-item:active h3, .menu .menu-item:active i, .menu .menu-item:active span {
         color: #fff; }
 
+.generator {
+  height: calc(100% - (80px + 140px + 60px));
+  margin: 0 20px 0 20px; }
+  .generator .generator-box {
+    height: auto; }
+    .generator .generator-box > div {
+      height: auto; }
+
 footer {
   padding-top: 30px;
   padding-left: 20px;

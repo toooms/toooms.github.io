@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lowenco | Model Guide</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icons-lowenco.css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <nav class="row">
+      <div class="left">
+        <a href="index.html"><img data-interchange="[img/logo_mobile.png, (default)], [img/logo.png, (medium)]" alt="logo"></a>
+      </div>
+      <div class="right">
+        <a href="#" class="button [tiny small radius round]">Log In</a>
+        <a href="#" data-options="align:left" data-dropdown="drop1">Language</a>
+        <ul id="drop1" class="f-dropdown" data-dropdown-content>
+          <li><a href="#">English</a></li>
+          <li><a href="#">Dansk</a></li>
+          <li><a href="#">Russian</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row generator">
+      <div class="generator-box">
+        <div class="left medium-4 columns">
+          <h3>Model Guide</h3>
+          <p>Generate your container model number</p>
+          <p>Here you can select all variations for your container. After selection you will be able to download .pdf file with all the necessary information.</p>
+          <a href="#">Read more about container specifications.</a>
+        </div>
+        <div class="right medium-8 columns">
+          <h2>CON20-<span id="print1">XX</span>-<span id="print2">X</span>-<span id="print3">X</span>-<span id="print4">XX</span>-<span id="print5">XX</span></h2>
+          
+          <dl class="tabs" data-tab>
+            <dd class="active"><a href="#panel2-1">Storage temp.</a></dd>
+            <dd><a href="#panel2-2">Compressor</a></dd>
+            <dd><a href="#panel2-3">Environment</a></dd>
+            <dd><a href="#panel2-4">Power source</a></dd>
+            <dd><a href="#panel2-5">Configuration</a></dd>
+          </dl>
+          <div class="tabs-content">
+
+            <div class="content active" id="panel2-1">
+              <!-- <a href="#panel2-2" class="button radius right">Next</a> -->
+              <div class="progress large-4 success round">
+                <span class="meter" style="width: 20%"></span>
+              </div>
+              <p>First panel content goes here...</p>
+              <!-- <input type="button" id="btnGetValue" Value="Select" /> -->
+              <form name="temp" action="">
+                <input type="radio" name="temp" value="00" id="1"> 00 = +1C storage temp.<br>
+                <input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.<br>
+                <input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.<br>
+                <input type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.<br>
+              </form>
+            </div>
+            <div class="content" id="panel2-2">
+              <div class="progress large-4 success round">
+                <span class="meter" style="width: 40%"></span>
+              </div>
+              <p>Second panel content goes here...</p>
+              <!-- <input type="button" id="btnGetValue" Value="Select" /> -->
+              <form name="comp" action="">
+                <input type="radio" name="comp" value="S" id="a1"> S = Single Compressor<br>
+                <input type="radio" name="comp" value="D" id="a2"> D = Dual Compressor<br>
+              </form>
+            </div>
+            <div class="content" id="panel2-3">
+              <div class="progress large-4 success round">
+                <span class="meter" style="width: 60%"></span>
+              </div>
+              <p>Third panel content goes here...</p>
+              <form name="enviro">
+                <input type="radio" name="enviro" value="N" id="#"> N = 30C abmient<br>
+                <input type="radio" name="enviro" value="H" id="#"> H = 45C ambient<br>
+                <input type="radio" name="enviro" value="X" id="#"> X = 55C ambient<br>
+              </form>
+            </div>
+            <div class="content" id="panel2-4">
+              <div class="progress large-4 success round">
+                <span class="meter" style="width: 80%"></span>
+              </div>
+              <!-- <p>Fourth panel content goes here...</p> -->
+              <form name="power">
+                <input type="radio" name="power" value="10" id="#"> 10 = 3 x 400Vac, 50Hz<br>
+                <input type="radio" name="power" value="20" id="#"> 20 = 3 x 220Vac, 60Hz<br>
+                <input type="radio" name="power" value="30" id="#"> 30 = Solar powered<br>
+                <input type="radio" name="power" value="40" id="#"> 40 = Generator powered<br>
+                <input type="radio" name="power" value="50" id="#"> 50 = Solar + Generator<br>
+              </form>
+            </div>
+            <div class="content" id="panel2-5">
+              <div class="progress large-4 success round">
+                <span class="meter" style="width: 100%"></span>
+              </div>
+             <!--  <p>Fourthh panel content goes here...</p> -->
+               <form name="config">
+                <input type="radio" name="config" value="10" id="#"> 10 = Standart configuration<br>
+                <input type="radio" name="config" value="20" id="#"> 20 = GMP configuration<br>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+    <div class="menu row">
+      <div class="menu-item text-center small-6 medium-3 columns">
+        <!-- <i class="fa fa-suitcase"></i> -->
+        <span class="icon-container"></span>
+        <h3>Product</h3>
+      </div>
+      <div class="menu-item text-center small-6 medium-3 columns">
+        <i class="fa fa-sitemap"></i>
+        <!-- <span class="icon-modelguide"></span> -->
+        <h3>Model Guide</h3>
+      </div>
+      <div class="menu-item text-center small-6 medium-3 columns">
+        <!-- <i class="fa fa-map-marker"></i> -->
+        <span class="icon-map"></span>
+        <h3>Find Dealers</h3>
+      </div>
+      <div class="menu-item text-center small-6 medium-3 columns">
+        <i class="fa fa-info"></i>
+        <!-- <span class="icon-Info"></span> -->
+        <h3>About</h3>
+      </div>
+    </div>
+
+    <footer class="row">
+      
+      <p class="text-left small-12 medium-6 columns">© 1998‐2014 LOWENCO, Inc. All rights reserved.</p>
+      <div class="text-right small-12 medium-6 columns">
+        <a href="#">Contact</a>
+        <a href="#">Dealer</a>
+        <a href="#">Sitemap</a>
+        <a href="#">About Us</a>
+      </div>
+    </footer>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script> // first selection
+      $(document).ready(function(){
+        $('input[name=temp]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=temp]:checked').val();
+          $('span#print1').html(selValue);
+        });
+      });
+    </script>
+    <script> // second selection
+      $(document).ready(function(){
+        $('input[name=comp]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=comp]:checked').val();
+          $('span#print2').html(selValue);
+        });
+      });
+    </script>
+    <script> // third selection
+      $(document).ready(function(){
+        $('input[name=enviro]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=enviro]:checked').val();
+          $('span#print3').html(selValue);
+        });
+      });
+    </script>
+    <script> // fourth selection
+      $(document).ready(function(){
+        $('input[name=power]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=power]:checked').val();
+          $('span#print4').html(selValue);
+        });
+      });
+    </script>
+    <script> // fifth selection
+      $(document).ready(function(){
+        $('input[name=config]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=config]:checked').val();
+          $('span#print5').html(selValue);
+        });
+      });
+    </script>
+
+  </body>
+</html>
