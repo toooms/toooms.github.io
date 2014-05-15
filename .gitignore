@@ -2,6 +2,6 @@ node_modules
 .tmp
 app/bower_components
 .sass-cache
-/bookunibook
-/catcatcat
-/eatclean
+bookunibook/
+catcatcat/
+eatclean/
