@@ -7,7 +7,6 @@
     <title>Lowenco | Welcome</title>
     <link rel="stylesheet" href="css/libraries.min.css"/>
     <link rel="stylesheet" href="css/app.min.css"/>
-    <link rel="stylesheet" href="css/lowenco-font.css"/>
     <script src="js/vendor/modernizr.min.js"></script>
   </head>
   <body>
@@ -124,7 +123,7 @@
         </div>
         
         <div class="large-9 medium-8 small-12 columns storage-unit"> 
-            <img src="images/container_lines.png" alt="" class="large-centered">
+            <img src="images/container_huge.png" width="600" alt="lowenco container" id="main-container" class="large-centered">
         </div>
 
          <dl class="accordion show-for-small" data-accordion>
@@ -174,9 +173,30 @@
         <div class="revealblocks">
           <div id="block1" class="large-9 medium-12 columns reveal-modal" data-reveal>
             <h3>General Information</h3>
-            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers. If your search requires more in-depth research, IACs can support you without your organization incurring common procurement cost.</p>
+            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers.</p>
             <!-- <img src="http://www.placehold.it/500x300" alt=""> -->
-            <img width="500" src="images/side-cont.jpg" alt="">
+            <!-- <img width="500" src="images/side-cont.jpg" alt=""> -->
+
+            <ul class="tabs vertical" data-tab>
+              <li class="tab-title active"><a href="#panel1a">Cooling system</a></li>
+              <li class="tab-title"><a href="#panel2a">Solar power panels</a></li>
+              <li class="tab-title"><a href="#panel3a">Plug&Play setup</a></li>
+            </ul>
+            <div class="tabs-content vertical">
+              <div class="content active" id="panel1a">
+                <p>Panel 1 content goes here.</p>
+                <img src="images/general-1.jpg" alt="">
+              </div> 
+              <div class="content" id="panel2a">
+                <p>Panel 2 content goes here.</p>
+                <img src="images/general-2.jpg" alt="">
+              </div>
+              <div class="content" id="panel3a">
+                <p>Panel 3 content goes here.</p>
+                <img src="images/general-3.jpg" alt="">
+              </div>
+            </div>
+
             <a class="close-reveal-modal">&#215;</a>
           </div>
           <div id="block2" class="large-9 medium-12 columns reveal-modal" data-reveal>
