@@ -24,8 +24,8 @@ SOFTWARE.
 var audioContext = null;
 var canvasContext = null;
 var meter = null;
-var canvasWidth = 10;
-var canvasHeight = 10;
+var canvasWidth = 20;
+var canvasHeight = 20;
 var rafID = null;
 
 // draw canvas
@@ -94,11 +94,11 @@ function drawLoop( time ) {
   
 //    
     if (meter.volume < 0.1) {
-        canvasContext.fillStyle = "yellow";
-        } else if (meter.volume > 0.2) {
-            canvasContext.fillStyle = "lightgreen";
+        canvasContext.fillStyle = "#ffffc9";
+        } //else if (meter.volume > 0.2) {
+            //canvasContext.fillStyle = "lightgreen";
         } else {
-            canvasContext.fillStyle = "red";
+            canvasContext.fillStyle = "gray";
     };
     
     
