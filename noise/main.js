@@ -95,7 +95,7 @@ function drawLoop( time ) {
 //    
     if (meter.volume < 0.1) {
         canvasContext.fillStyle = "#ffffc9";
-        } //else if (meter.volume > 0.2) {
+        //} else if (meter.volume > 0.2) {
             //canvasContext.fillStyle = "lightgreen";
         } else {
             canvasContext.fillStyle = "gray";
