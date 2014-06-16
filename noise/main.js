@@ -11,9 +11,6 @@ function draw () {
     canvasContext = document.getElementById( "target" ).getContext("2d");
 	canvasContext.fillStyle="#fff";
     canvasContext.fillRect(0,0,canvasWidth,canvasHeight);
-
-
-    
 };
 
 
@@ -66,7 +63,8 @@ function drawLoop( time ) {
     //canvasContext.font="30px Helvetica";
     //canvasContext.fillStyle = "black";
     //canvasContext.fillText(meter.volume.toFixed(3),200,100);
-    document.getElementById("result").innerHTML = meter.volume.toFixed(4);
+    document.getElementById("result").innerHTML = (meter.volume*10).toFixed(3);
+    //document.getElementById("result").innerHTML = meter.volume.toFixed(4);
 
     //canvasContext.clearRect();
     
@@ -77,10 +75,10 @@ function drawLoop( time ) {
     //        canvasContext.fillStyle = "green"; 
     //
 
-    if (meter.volume < 0.1) {
+    if (meter.volume < 0.05) {
         canvasContext.fillStyle = "#ffffc9";
         //} else if (meter.volume > 0.2) {
-            //canvasContext.fillStyle = "lightgreen";
+            //canvasContext.fillStyle = "red";
         } else {
             canvasContext.fillStyle = "gray";
     };
