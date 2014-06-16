@@ -24,8 +24,8 @@ SOFTWARE.
 var audioContext = null;
 var canvasContext = null;
 var meter = null;
-var canvasWidth = 20;
-var canvasHeight = 20;
+var canvasWidth = 200;
+var canvasHeight = 200;
 var rafID = null;
 
 // draw canvas
@@ -33,6 +33,9 @@ function draw () {
     canvasContext = document.getElementById( "target" ).getContext("2d");
 	canvasContext.fillStyle="#fff";
     canvasContext.fillRect(0,0,canvasWidth,canvasHeight);
+
+
+    
 };
 
 
@@ -40,7 +43,7 @@ window.onload = function() {
 
     // call function that draws canvas
     draw();
-    
+
     // monkeypatch Web Audio
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
 	
@@ -64,7 +67,7 @@ window.onload = function() {
 }
 
 function didntGetStream() {
-    alert('Stream generation failed.');
+    alert('Failed to access mic');
 }
 
 function gotStream(stream) {
@@ -82,17 +85,20 @@ function gotStream(stream) {
 function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0, 0, canvasWidth, canvasHeight);
-    //canvasContext.font="20px Helvetica";
+    //canvasContext.font="30px Helvetica";
     //canvasContext.fillStyle = "black";
-    //canvasContext.fillText(meter.volume.toFixed(3),20,20);
+    //canvasContext.fillText(meter.volume.toFixed(3),200,100);
+    document.getElementById("result").innerHTML = meter.volume.toFixed(4);
 
+    //canvasContext.clearRect();
+    
     // check if we're currently clipping
-//    if (meter.checkClipping())
-//        canvasContext.fillStyle = "red";
-//    else
-//        canvasContext.fillStyle = "green";
-  
-//    
+    //    if (meter.checkClipping())
+    //        canvasContext.fillStyle = "red";
+    //    else
+    //        canvasContext.fillStyle = "green"; 
+    //
+
     if (meter.volume < 0.1) {
         canvasContext.fillStyle = "#ffffc9";
         //} else if (meter.volume > 0.2) {
@@ -111,3 +117,4 @@ function drawLoop( time ) {
     // set up the next visual callback
     rafID = window.requestAnimationFrame( drawLoop );
 }
+
