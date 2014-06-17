@@ -38,7 +38,7 @@ window.onload = function() {
     } catch (e) {
         alert('getUserMedia threw exception :' + e);
     }
-    console.log("hello world");
+    console.log("console test");
 }
 
 function didntGetStream() {
@@ -75,8 +75,10 @@ function drawLoop( time ) {
     //        canvasContext.fillStyle = "green"; 
     //
 
+    // this controls behaviour and sensativity of the box
     if (meter.volume < 0.05) {
         canvasContext.fillStyle = "#ffffc9";
+
         //} else if (meter.volume > 0.2) {
             //canvasContext.fillStyle = "red";
         } else {
@@ -93,4 +95,6 @@ function drawLoop( time ) {
     // set up the next visual callback
     rafID = window.requestAnimationFrame( drawLoop );
 }
+
+
 

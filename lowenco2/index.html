@@ -3,7 +3,7 @@
 <html class="no-js" lang="en" >
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name  ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lowenco | Welcome</title>
     <link rel="stylesheet" href="css/libraries.min.css"/>
     <link rel="stylesheet" href="css/app.min.css"/>
@@ -71,11 +71,11 @@
 
         <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href="#"><span class="lw-icons-selector"></span> Model Selector</a></li>
+          <li><a href="selector.html"><span class="lw-icons-selector"></span> Model Selector</a></li>
           <!-- <li><a href="#"><img src="images/icons-02.svg" width="10" alt=""> Model Selector</a></li> -->
           <li><a href="#"><i class="fa fa-globe"></i> Dealer Location</a></li>
           <li><a href="#"><i class="fa fa-folder-open-o"></i> Technical Data</a></li>
-          <li><a href="#"><i class="fa fa-envelope-o"></i> Contact us</a></li>
+          <li><a href="#" data-reveal-id="block-contact"><i class="fa fa-envelope-o"></i> Contact us</a></li>
         </ul>
       </section>
     </nav>
@@ -185,16 +185,16 @@
             </ul>
             <div class="tabs-content vertical">
               <div class="content active" id="panel1a">
-                <p>Panel 1 content goes here.</p>
                 <img src="images/general-1.jpg" alt="">
+                <p>Panel 1 content goes here.</p>
               </div> 
               <div class="content" id="panel2a">
-                <p>Panel 2 content goes here.</p>
                 <img src="images/general-2.jpg" alt="">
+                <p>Panel 2 content goes here.</p>
               </div>
               <div class="content" id="panel3a">
-                <p>Panel 3 content goes here.</p>
                 <img src="images/general-3.jpg" alt="">
+                <p>Panel 3 content goes here.</p>
               </div>
             </div>
 
@@ -215,7 +215,7 @@
           <div id="block4" class="large-9 medium-12 columns reveal-modal" data-reveal>
             <h3>Humanitarian Information</h3>
             <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers.IACs can support you without your organization incurring common procurement cost.</p>
-            <img width="500" src="images/side-hum1.jpg" alt="humanitarian">
+            <img width="500" src="images/side-hum.jpg" alt="">
             <a class="close-reveal-modal">&#215;</a>
           </div>
           <div id="block5" class="large-9 medium-12 columns reveal-modal" data-reveal>
@@ -225,15 +225,36 @@
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </div>
+          
+          <!-- Contact page -->
+        <div id="block-contact" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Contact info</h3>
+            <ul class="contact-info left">
+                <li>Phone: +45 22 98 24 00</li>
+                <li>E-mail: info@lowenco.com</li>
+                <br />
+                <li>LOWENCO</li>
+                <li>Bavnevej 10A</li>
+                <li>DK-6580 Vamdrup</li>
+                <li>Denmark</li>
+            </ul>
+            <div class="right" id="map_canvas">
+              
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+       <!-- Contact page END! -->  
+          
 
       </div>
 
       
 
-      <footer class="row">
-        <p class="right"><small>&copy; 2014, Lowenco. All rights reserved.</small></p>
-      </footer>
+      
     </div>
+    <footer class="row">
+      <p class="right"><small>&copy; 2014, Lowenco. All rights reserved.</small></p>
+    </footer>
 
 
    <!-- This script detects users timezone and changes background position-->
@@ -253,11 +274,31 @@
       moveBg();
    </script>
 
-    
-    
-
     <script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(55.426687,9.294129);
+        var mapOptions = {
+          zoom: 3,
+          center: myLatlng
+        }
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Hello World!'
+      });
+    }
+    
+      google.maps.event.addDomListener(window, 'load', initialize);
+      $(document).foundation();
+      $('#block-contact').bind('opened', function() {
+      google.maps.event.trigger(window, 'load', initialize);
+      });
+    </script>
   </body>
 </html>
