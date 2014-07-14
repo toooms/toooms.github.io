@@ -40,6 +40,7 @@ for (var i = 0; i<5; i++) {
 var explodeSound = new Audio('explode.wav');
 var fireSound = new Audio('laser.wav');
 fireSound.volume = 0.5;
+var songSound = new Audio ('toto.mp3');
 	
 function setup(){
 	initVars(); 
@@ -88,7 +89,7 @@ function draw() {
 		renderInvaders(); 
 		renderBullets(); 
 		renderParticles();
-		renderTimer(); 
+		renderTimer();
 		
 		if(invaders.length==0) {
 			state = STATE_GAMEOVER; 
@@ -108,12 +109,12 @@ function draw() {
 		renderBullets(); 
 		renderParticles();		
 		
-		renderMessage2("NAV GANA LABI, PACENTIES VAIRĀK");
-		renderMessage("LAIKS: "+milsToTimer(gameTime)); 
+		renderMessage("LAIKS: "+milsToTimer(gameTime)+", NOT GOOD ENOUGH"); 
+		renderMessage2("LŪDZU PACENTIES VAIRĀK");
+		
 		
 	} else if(state == STATE_WAITING) { 
 		
-
 		updateInvaders(); 
 		updateBullets();
 		updateParticles(); 
@@ -122,10 +123,13 @@ function draw() {
 
 		playerShip.render(ctx); 
 		renderBullets(); 
-		renderParticles();		
+		renderParticles();
 		
 		renderMessage2("NĀKOTNE IR TAVĀS ROKĀS");
 		renderMessage("HIT FIRE TO PLAY");
+
+		songSound.play();
+
 		
 		
 	}
@@ -195,6 +199,7 @@ function startGame() {
 	resetInvaders(); 
 	gameStartTime = Date.now(); 
 	state = STATE_PLAYING; 
+		
 }
 
 function updateBullets(){
@@ -461,7 +466,8 @@ function renderParticles() {
 	for(var i = 0; i<particles.length; i++) { 
 		particles[i].render(ctx); 
 	}
-	ctx.globalCompositeOperation = 'source-over'; 
+	ctx.globalCompositeOperation = 'source-over';
+
 }
 	 
 
