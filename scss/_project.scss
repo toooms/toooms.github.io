@@ -1,0 +1,14 @@
+.opened {
+	h1 {
+		text-shadow:$longshadow;
+		color: #fff;
+		font-weight: bold;
+		//background-color: $primary-color;
+	}
+	margin-bottom: 2em;
+}
+
+#back {
+	font-size: 2em;
+	text-shadow:$longshadow;
+}
