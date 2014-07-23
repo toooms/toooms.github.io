@@ -5047,7 +5047,13 @@ footer {
 #hello {
   text-shadow: 1px 1px #EC359C, 2px 2px #EC359C, 3px 3px #EC359C, 4px 4px #EC359C, 5px 5px #EC359C, 6px 6px #EC359C;
   color: #fff;
-  font-size: 7em; }
+  font-size: 3em; }
+
+.big {
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 1px;
+  margin: 70px 0; }
 
 #i-am {
   margin: 90px 0;
