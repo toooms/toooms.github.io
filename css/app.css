@@ -4906,26 +4906,34 @@ nav {
     nav .menu a:hover {
       text-shadow: 1px 1px #EC359C, 2px 2px #EC359C, 3px 3px #EC359C, 4px 4px #EC359C; }
 
-.container .project img {
-  opacity: 0.7;
-  transition: opacity 0.2s linear; }
-  .container .project img:hover {
-    opacity: 1; }
-  @media only screen and (max-width: 40em) {
-    .container .project img {
-      opacity: 1; } }
-.container .project .whatever p {
-  padding-left: 0; }
-.container .project .whatever h4 {
-  margin-top: 0.5rem;
-  text-shadow: 1px 1px #EC359C, 2px 2px #EC359C, 3px 3px #EC359C, 4px 4px #EC359C, 5px 5px #EC359C, 6px 6px #EC359C;
-  color: #fff; }
-  .container .project .whatever h4:hover {
-    text-shadow: 1px 1px #EC359C, 2px 2px #EC359C, 3px 3px #EC359C, 4px 4px #EC359C; }
-.container .project .whatever h5 {
-  color: #ccc;
-  font-weight: normal;
-  text-transform: uppercase; }
+.container {
+  min-height: 100%;
+  margin-bottom: -270px; }
+  .container .project img {
+    opacity: 0.7;
+    transition: opacity 0.2s linear; }
+    .container .project img:hover {
+      opacity: 1; }
+    @media only screen and (max-width: 40em) {
+      .container .project img {
+        opacity: 1; } }
+  .container .project .whatever p {
+    padding-left: 0; }
+  .container .project .whatever h4 {
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px #EC359C, 2px 2px #EC359C, 3px 3px #EC359C, 4px 4px #EC359C, 5px 5px #EC359C, 6px 6px #EC359C;
+    color: #fff; }
+    .container .project .whatever h4:hover {
+      text-shadow: 1px 1px #EC359C, 2px 2px #EC359C, 3px 3px #EC359C, 4px 4px #EC359C; }
+  .container .project .whatever h5 {
+    color: #ccc;
+    font-weight: normal;
+    text-transform: uppercase; }
+
+.container:after {
+  content: "";
+  display: block;
+  height: 270px; }
 
 .colored-spacer {
   content: '';
