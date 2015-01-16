@@ -1,34 +1,30 @@
 'use strict';
 
 module.exports = function(grunt) {
+
+    require('load-grunt-tasks')(grunt);
+
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		app: 'toooms.github.io',
+		app: 'app',
 		dist: 'dist',
 
-		concat: {
-		    options: {
-		      separator: ';',
-		    },
-		    dist: {
-		      src: ['<%= app %>/js/*.js', 'src/project.js', 'src/outro.js'],
-		      dest: '<%= app %>/built/app.js',
-		    },
-		  },
-
 		sass: {
-			options: {
-				includePaths: ['<%= app %>/bower_components/foundation/scss']
-			},
 			dist: {
 				options: {
-					outputStyle: 'extended'
+					style: 'expanded', // expanded or nested or compact or compressed
+					loadPath: '<%= app %>/bower_components/foundation/scss',
+					compass: true,
+					quiet: true
 				},
 				files: {
 					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
 				}
 			}
 		},
+
+		
 
 		jshint: {
 			options: {
@@ -72,7 +68,7 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-		
+
 		uglify: {
 			options: {
 				preserveComments: 'some',
@@ -112,18 +108,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		cssmin: {
-	        dist: {
-	            files: {
-	                '<%= dist %>/css/app.min.css': [
-	                    '.tmp/css/{,*/}*.css',
-	                    '<%= app %>/css/{,*/}*.css'
-	                ]
-	            }
-	        },
-	    },
-
-
 		connect: {
 			app: {
 				options: {
@@ -146,7 +130,7 @@ module.exports = function(grunt) {
 			}
 		},
 
-		bowerInstall: {
+		wiredep: {
 			target: {
 				src: [
 					'<%= app %>/**/*.html'
@@ -155,34 +139,21 @@ module.exports = function(grunt) {
 					'modernizr',
 					'font-awesome',
 					'jquery-placeholder',
-					'jquery.cookie',
 					'foundation'
 				]
 			}
 		}
-		
+
 	});
 
 	
-	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-usemin');
-	grunt.loadNpmTasks('grunt-bower-install');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-newer');
-
 	grunt.registerTask('compile-sass', ['sass']);
-	grunt.registerTask('bower-install', ['bowerInstall']);
+	grunt.registerTask('bower-install', ['wiredep']);
+	
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
-	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	
+	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };
