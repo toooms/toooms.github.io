@@ -37,7 +37,7 @@ h2 {
 	box-sizing: border-box;
 	width: 265px;
 	height: 265px;
-	opacity: .8;
+	opacity: 1;
 	position: relative;
 	margin: 0 auto;
 	-webkit-transition: all .2s ease-in-out;
@@ -47,6 +47,8 @@ h2 {
 }
 .logo-circle:hover {
 	border: solid 10px #f1f1f1;
+	width: 270px;
+	height: 270px;
 	opacity: 1;
 }
 
