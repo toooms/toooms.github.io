@@ -34,9 +34,12 @@ h2 {
 .logo-circle {
 	background: #fff;
 	border-radius: 50%;
-	box-sizing: border-box;
+/*  	box-sizing:border-box;
+  	-moz-box-sizing:border-box;
+  	-webkit-box-sizing:border-box;*/
 	width: 265px;
 	height: 265px;
+	border: solid 7px #f1f1f1;
 	opacity: 1;
 	position: relative;
 	margin: 0 auto;
@@ -45,10 +48,8 @@ h2 {
   	-o-transition: all .2s ease-in-out;
   	transition: all .2s ease-in-out;
 }
-.logo-circle:hover {
-	border: solid 10px #f1f1f1;
-	width: 270px;
-	height: 270px;
+.logo-circle:hover{
+	border: solid 15px #f3f3f3;
 	opacity: 1;
 }
 
