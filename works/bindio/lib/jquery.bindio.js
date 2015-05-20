@@ -67,41 +67,8 @@ $(document).on('click', '*[data-rel="subscribe"]', function(event){
 	event.preventDefault();
 
 	var lang  = typeof $('body').attr('lang') != 'undefined' && $('body').attr('lang') != 'en' ? '-' + $('body').attr('lang'):'';
-
-	// $.ajax({
-	// 	url: 'modal' + lang + '.html',
-	// 	dataType: 'html',
-	// 	success: function(data)
-	// 	{
-	// 		var modal = '<div id="modal"><div class="box col-md-7 col-xs-12 center-block"><div class="close"></div>';
-	// 		modal+= data;
-	// 		modal+= '</div></div>';
-
-	// 		$('body').append(modal);
-	// 	}
-	// });
 });
 
 $(document).on('click', 'div.close', function(){
 	$('div#modal').remove();
-});
-
-$(document).on('click', 'a.to_contacts', function(event){
-	event.preventDefault();
-
-	if($('div#modal').length)
-		$('div#modal').remove();
-
-	$('html, body').animate({
-        scrollTop: $('#footer').offset().top - 71
-    }, 1000);
-});
-
-$(document).on('click', 'body', function(event){
-	var target = $( event.target );
-
-	if(!target.closest('.box').length && $('div#modal').length){
-		$('div#modal').remove();
-		return false;
-	}
 });
