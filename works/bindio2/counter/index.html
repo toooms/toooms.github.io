@@ -29,7 +29,7 @@
    			margin-bottom: 100px;
 		}
 		h1, h2 {
-			font-size: 21px;
+			font-size: 18px;
 			margin-top: 20px;
 			margin-bottom: 5px;
 		}
@@ -99,18 +99,18 @@
     		text-decoration: none;
     		vertical-align: top;
     		white-space: nowrap;
-    		width: auto;
-    		margin-top: 41px;
+    		width: 40%;
+    		margin-top: 31px;
 		}
 		#mc_embed_signup .button:hover {
     		background-color: #219C3A;
 		}
 		.mc-field-group {
-			padding-top: 15px;
+			padding-top: 5px;
 			text-align: left;
 			float: left;
 			margin: 0 auto;
-			width: 40%;
+			width: 50%;
 		}
 		input, label {
     		display:block;
@@ -118,6 +118,17 @@
 		}
 		label {
 			margin-bottom: 8px;
+		}
+		#footer {
+			border-top: 1px solid rgba(255,255, 255, .12);
+			padding-top: 30px;
+			margin-bottom: 100px;
+			font-size: 14px;
+			height: 130px;
+		}
+		a {
+    		color: #24b341;
+    		text-decoration: none;
 		}
 		@media (max-width: 600px) {
 			.mc-field-group {
@@ -132,7 +143,7 @@
 	<div class="wrapper">
 		<a href="#"><img id="logo" src="../img/campaign-bindio-logo.png" alt="bindio logo"></a>
 		<div class="social">
-				<a href="https://www.facebook.com/securebindio" class="social facebook" target="_blank">
+				<a href="https://www.facebook.com/securebindio"target="_blank">
 					<svg version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="480 480 40 40" enable-background="new 480 480 40 40" xml:space="preserve" width="30">
 <path fill="#15B339" d="M-393.9,1171c-28.2,12.8-57.7,20.5-89.7,24.4c32.1-19.2,56.4-50,67.9-85.9c-29.5,17.9-62.8,30.8-98.7,37.2
@@ -145,7 +156,7 @@
 	v-19.7h5.8l0.8-6.5H503.2z"/>
 </svg>
 				</a>
-				<a href="https://twitter.com/securebindio" class="social twitter" target="_blank">
+				<a href="https://twitter.com/securebindio" target="_blank">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="480 480 40 40" enable-background="new 480 480 40 40" xml:space="preserve" width="30">
 <path fill="#15B339" d="M-393.9,1171c-28.2,12.8-57.7,20.5-89.7,24.4c32.1-19.2,56.4-50,67.9-85.9c-29.5,17.9-62.8,30.8-98.7,37.2
@@ -163,10 +174,11 @@
 				</a>
 		</div>
 		<!-- <div class="clock" style="margin:2em;"></div> -->
-		<h3 style="clear:both;">Only <span style="color:#24b341;" id="clock"></span> until our Kickstarter campaign</h3>
+
 		<div class="videoWrapper">
 			<iframe width="640" width="320" src="https://www.youtube.com/embed/U2lfkxyJBIM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
+				<h3 style="clear:both;">Only <span style="color:#24b341;font-size:30px;" id="clock"></span> until our Kickstarter campaign</h3>
 		<h1>Safety doesn’t happen by accident - We’re working on a safer tomorrow.</h1>
 		<h2>Stay tuned! Be first to know about our updates.</h2>
 		
@@ -184,12 +196,35 @@
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_27306fc5cc8d34b3b5d089aea_1d783a3d3b" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe for information and updates!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
 </form>
 </div>
-
 <!--End mc_embed_signup-->
+
+
+
+		<div class="" id="footer">
+			<div class="" style="float:left;text-align:left;">
+				<div id="phone">
+					<img src="../img/icon-phone.svg" width="40" alt="icon phone" class="pull-left">
+					<b>+ 371 28393663</b>
+				</div>
+				<div id="mail">
+					<img src="../img/icon-mail.svg" width="40" alt="icon phone" class="pull-left">
+					<b><a href="mailto:info@bindio.com">info@bindio.com</a></b>
+				</div>
+				<a href="http://draugiemgroup.com/" target="_blank"><img src="../img/draugiem-group.png" alt="part ofdraugiem group" style="opacity:.5; margin-top: 20px; margin-bottom: 10px;" /></a>
+			</div>
+			<div class="" style="width:50%;float:right;text-align:right;">
+				<a href="index.html">
+					<img style="opacity:0.5;" src="../img/bindio-logo-gr.png" alt="bindio logo" style="">
+				</a>
+				<br />
+				<p>The most secure automated bike parking dock with a built-in chain and electronic lock.</p>
+				<p style="opacity:0.5;">2015, All Rights Reserved, Bindio</p>
+			</div>
+		</div>
 
 <script>
 $('#clock').countdown('2015/10/30', function(event) {
