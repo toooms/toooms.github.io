@@ -1,0 +1,35 @@
+<div class="bigTitle black" style="margin-bottom: 50px;">Atvaino, publiskā reģistrācija vēl nav pieejama</div>
+
+
+Piesakies jaunumiem un nepalaid garām registrēšanos. Apskati vairāk <a href="business.html">Bizness</a> lapu vai <a href="" class="to_contacts">Sazinies ar mums</a>!
+<br /><br /><br />
+Pierakstīties jaunumiem:<br /><br />
+<form id="subscribe">
+	<input type="text" value="" class="mail" placeholder="Tavs e-pasts" />
+	<input type="submit" value="Pieteikties" />
+</form>
+
+
+<br /><br />
+<p style="font-weight: 600;">Social networks:</p>
+<a href="https://www.facebook.com/byrakforbike" class="social facebook" target="_blank">&nbsp;</a>
+<a href="https://twitter.com/BYRAK_for_BIKE" class="social twitter" target="_blank">&nbsp;</a>
+<script>
+	$('form#subscribe').submit(function(event){
+		event.preventDefault();
+		var email = $(this).find('input.mail');
+
+		$.ajax({
+			type: "POST",
+			url: 'subscribe.php',
+			data: {mail: email.val()},
+			success: function(data)
+			{
+				alert(data);
+				email.val('');
+			}
+		});
+		
+		return false;
+	});
+</script>

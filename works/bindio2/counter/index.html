@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Bindio. The most secure automated bike parking dock." />
+	<meta name="keywords" content="bicycle safety europe bindio lock parking electric charging infrastructure" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bindio - Launch Counter</title>
+	<link rel="stylesheet" type="text/css" href="css/style-bindio.css" />
+	<style>
+		* {
+			-webkit-box-sizing: border-box;
+    		-moz-box-sizing: border-box;
+    		box-sizing: border-box;
+		}
+		body {
+			background: url(../img/campaign-bg.jpg) no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+  			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   			font-weight: 300;
+   			color: #fff;
+   			text-align: center;
+		}
+		h1, h2 {
+			font-size: 21px;
+			margin-top: 20px;
+			margin-bottom: 5px;
+		}
+		h2 {
+			font-weight: 100;
+			margin-top: 10px;
+		}
+		#logo {
+			margin: 0 auto;
+			display: block;
+			padding: 20px 0;
+		}
+		.wrapper {
+			max-width: 800px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		form input {
+			height: 36px;
+    		padding: 6px 12px;
+    		font-size: 14px;
+    		line-height: 1.42857143;
+    		color: #555555;
+    		background-color: #ffffff;
+    		background-image: none;
+    		border: 2px solid #cccccc;
+    		border-radius: 4px;
+		}
+		#mc_embed_signup {
+			margin-bottom: 100px;
+			margin-top: 20px;
+		}
+		#mc_embed_signup .button {
+    		clear: both;
+    		background-color: #24b341;
+    		border: 0 none;
+    		border-radius: 3px;
+    		color: #FFFFFF;
+    		cursor: pointer;
+    		display: inline-block;
+    		font-size: 15px;
+    		font-weight: bold;
+    		height: 42px;
+    		line-height: 42px;
+    		margin: 0 5px 10px 0;
+    		padding: 0 22px;
+    		text-align: center;
+    		text-decoration: none;
+    		vertical-align: top;
+    		white-space: nowrap;
+    		width: auto;
+    		margin-top: 25px;
+		}
+		#mc_embed_signup .button:hover {
+    		background-color: #219C3A;
+		}
+		.mc-field-group {
+			padding-top: 15px;
+			text-align: left;
+			width: 60%;
+			display: block;
+			margin: 0 auto;
+		}
+		input, label {
+    		display:block;
+    		width: 100%;
+		}
+		label {
+			margin-bottom: 8px;
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="../js/jquery.countdown.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<a href="#"><img id="logo" src="../img/campaign-bindio-logo.png" alt="bindio logo"></a>
+		<!-- <div class="clock" style="margin:2em;"></div> -->
+		<h3>Only <span style="color:#24b341;" id="clock"></span> left until our Kickstarter campaign</h3>
+		<div class="videoWrapper">
+			<iframe width="640" width="320" src="https://www.youtube.com/embed/U2lfkxyJBIM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<h1>Safety doesn’t happen by accident - We’re working on a safer tomorrow.</h1>
+		<h2>Stay tuned! Be the first one knowing about our updates.</h2>
+		
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//bindio.us11.list-manage.com/subscribe/post?u=27306fc5cc8d34b3b5d089aea&amp;id=1d783a3d3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address </label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_27306fc5cc8d34b3b5d089aea_1d783a3d3b" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe for information and updates!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+<script>
+$('#clock').countdown('2015/10/30', function(event) {
+	$(this).html(event.strftime('%D days %H hours %M minutes %S sec'));
+});
+</script>
+	</div>
+</body>
+</html>
