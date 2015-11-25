@@ -7,6 +7,25 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>HELLO WORLD!</h1>
+	<h1>GRIBI MAZGĀT VEĻU?</h1>
+	<div id="bookingjs">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.timekit.io/booking-js/v1/booking.min.js" defer></script>
+  <script type="text/javascript">
+    window.timekitBookingConfig = {
+      name: 'Veļas mazgāšana',
+      email: 'toms.rits@gmail.com',
+      apiToken: 'HkW5G8tchb7SrI1PrDl3ku6tddEMinT9',
+      calendar: '1ad8637c-f861-42a0-b024-01019b208309',
+      avatar: 'http://theglobalstory.files.wordpress.com/2014/01/washing-machine-dishwasher-fridge-installation.jpg',
+      localization: {
+        timeDateFormat: '24h-dmy-mon'
+      },
+      timekitFindTime: {
+        ignore_all_day_events: true
+      }
+    }
+  </script>
+</div>
 </body>
 </html>
