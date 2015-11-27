@@ -1,0 +1,32 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /volonts/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /volonts/index.php [L]
+</IfModule>
+
+# END WordPress
+
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^toooms.github.io[nc]
+RewriteRule ^(.*)$ http://www.toooms.github.io/$1 [r=301,nc]
+
+//Caching schema
+<FilesMatch "\.(css)$">
+Header set Cache-Control "max-age=0"
+</FilesMatch>
+ 
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<FilesMatch ".(js)">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>

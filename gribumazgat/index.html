@@ -13,19 +13,25 @@
   <script type="text/javascript" src="http://cdn.timekit.io/booking-js/v1/booking.min.js" defer></script>
   <script type="text/javascript">
     window.timekitBookingConfig = {
-      name: 'Veļas mazgāšana',
+      name: 'Toms',
       email: 'toms.rits@gmail.com',
-      apiToken: 'HkW5G8tchb7SrI1PrDl3ku6tddEMinT9',
+      apiToken: 'ra1yZ3ZU9bUbjnS7EB7aFPm4GKtEfFgd',
       calendar: '1ad8637c-f861-42a0-b024-01019b208309',
-      avatar: 'http://theglobalstory.files.wordpress.com/2014/01/washing-machine-dishwasher-fridge-installation.jpg',
-      localization: {
-        timeDateFormat: '24h-dmy-mon'
-      },
+      avatar: 'https://lh4.googleusercontent.com/-ObJ6y1CIZxw/AAAAAAAAAAI/AAAAAAAAC8I/7hvRKr6kR_s/photo.jpg',
       timekitFindTime: {
-        ignore_all_day_events: true
+        filters: {
+          and: [
+            {
+              business_hours: { }
+            },
+            {
+              exclude_weekend: { }
+            }
+          ]
+        }
       }
     }
   </script>
 </div>
-</body>
+<iframe src="https://calendar.google.com/calendar/embed?src=rm15fs4am5lkni4s3homa6o4og%40group.calendar.google.com&ctz=Europe/Riga" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </html>
