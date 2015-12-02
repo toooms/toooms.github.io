@@ -5,33 +5,49 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Gribu mazgāt veļu</title>
 	<link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<h1>GRIBI MAZGĀT VEĻU?</h1>
-	<div id="bookingjs">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <div id="bookingjs">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.timekit.io/booking-js/v1/booking.min.js" defer></script>
+  <script type="text/javascript">
+    window.timekitBookingConfig = {
+      name: 'Washing pashing',
+      email: 'toms.rits@gmail.com',
+      apiToken: '92n8x0x2nUx6zJc0SIKOK2TANxGCJc8J',
+      calendar: '1ad8637c-f861-42a0-b024-01019b208309',
+      avatar: 'http://theglobalstory.files.wordpress.com/2014/01/washing-machine-dishwasher-fridge-installation.jpg',
+      timekitFindTime: {
+        ignore_all_day_events: true
+        emails: [],
+        calendar_ids: ['1670ff24-a363-42d6-9342-2d6a6f634b85']
+      }
+    }
+  </script>
+  </div>
+</div>
+</div>
+</html>
+
+<!-- <div id="bookingjs">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://cdn.timekit.io/booking-js/v1/booking.min.js" defer></script>
   <script type="text/javascript">
     window.timekitBookingConfig = {
       name: 'Toms',
       email: 'toms.rits@gmail.com',
-      apiToken: 'ra1yZ3ZU9bUbjnS7EB7aFPm4GKtEfFgd',
+      apiToken: 'mgsudT0fKh5ZZ1kDRBIeKaz3qMlq8x9a',
       calendar: '1ad8637c-f861-42a0-b024-01019b208309',
-      avatar: 'https://lh4.googleusercontent.com/-ObJ6y1CIZxw/AAAAAAAAAAI/AAAAAAAAC8I/7hvRKr6kR_s/photo.jpg',
+      avatar: 'http://theglobalstory.files.wordpress.com/2014/01/washing-machine-dishwasher-fridge-installation.jpg',
       timekitFindTime: {
-        filters: {
-          and: [
-            {
-              business_hours: { }
-            },
-            {
-              exclude_weekend: { }
-            }
-          ]
-        }
+        ignore_all_day_events: true
+      },
+      localization: {
+        timeDateFormat: '24h-dmy-mon',
+        showTimezoneHelper: true
       }
     }
   </script>
-</div>
-<iframe src="https://calendar.google.com/calendar/embed?src=rm15fs4am5lkni4s3homa6o4og%40group.calendar.google.com&ctz=Europe/Riga" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-</html>
+  </div> -->
