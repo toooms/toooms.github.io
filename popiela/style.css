@@ -24,7 +24,7 @@
 .galva {
     width: 450px; 
     height: 450px;
-    background: url(img/galva2.png) no-repeat;
+    background: url(img/galva4.png) no-repeat;
     background-size: cover;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 30000ms;
@@ -43,10 +43,10 @@
 
 @-webkit-keyframes spin {
   from {
-    -webkit-transform:rotate(0deg);
+    -webkit-transform:rotate(360deg);
   }
 
   to {
-    -webkit-transform:rotate(360deg);
+    -webkit-transform:rotate(0deg);
   }
 }
