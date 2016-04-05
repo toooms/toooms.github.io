@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Proxima-Bold";
+    src: url(font/ProximaNova-Bold.otf);
+}
+
+@font-face {
+    font-family: "Proxima-Reg";
+    src: url(font/ProximaNova-Regular.otf);
+}
+
+body {
+    /* šeit būs CUSTOM fonts */
+    font-family: "Proxima-Reg", Arial;
+}
+
+.menu {
+    background: #fff;
+}
+
+.align-middle {
+    display: flex;
+    align-content :center;
+}
+
+.leftpageborder, .rightpageborder {
+    position: fixed;
+    height: 120%;
+    width: 20px;
+    top: 0;
+    background-color: #fff;
+    z-index: 6;
+}
+
+.rightpageborder {
+    right: 0;
+}
+
+.leftpageborder {
+    left: 0;
+}
+
+
+header {
+    padding: 8px 20px;
+    background: white;
+}
+header a {
+    text-transform: uppercase;
+}
+
+a {
+    color: black;
+    font-size: 12px;
+    font-family: "Proxima-Bold", Arial;
+}
+a:hover {
+    color: white;
+    background: #222;
+}
+
+/*video { 
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1000;
+}*/
+
+video { 
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 1;
+    min-width: 500px;
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1000;
+}
+
+#video {
+    width: 500px;
+}
+
+.footer-rotate {
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg) translateZ(0);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg) translateZ(0);
+    position: fixed;
+    display: inline-block;
+    width: 400px;
+    left: 94%;
+    bottom: 9%;
+    z-index: 10;
+}
+.footer-rotate a {
+    font-size: 14px;
+    letter-spacing:0.7px;
+}
