@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  /*animation: background-changer steps(4) 6s infinite;*/
+  /*background-image: url(http://i.giphy.com/k22GuD71QfOSY.gif);;*/
+  background-image: url(http://i.giphy.com/fbwjC8pNJCe8o.gif);;
+  /*background-image: url(img/bg.jpg);*/
+  background-size: cover;
+}
+ .center {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+ }
+
+ .link:hover {
+   opacity: .7;
+   transition: .2s;
+   top: -20px;
+ }
+
+.flex-item {
+  padding-bottom: 20px;
+  max-width: 444px;
+}
+
+.flex-item span#3 img {
+  max-width: 444px;
+}
+
+@keyframes background-changer {
+  0% {background-image: url(http://i.giphy.com/d3MEQYJQpJSKs.gif);} /*exploding house*/
+  25% {background-image: url(http://i.giphy.com/C1nEwzSrlVW80.gif);} /*factory*/
+  50% {background-image: url(http://i.giphy.com/Lr6JNP2E8npbG.gif);} /*tank girl*/
+  100% {background-image: url(http://i.giphy.com/k22GuD71QfOSY.gif);} /*explosion dessert*/
+}
