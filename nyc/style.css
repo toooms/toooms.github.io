@@ -45,3 +45,8 @@ video {
   text-align: center;
   margin: 10px 0 100px 0;
 }
+
+#stamp {
+  margin: 0 auto;
+  display: block;
+}
