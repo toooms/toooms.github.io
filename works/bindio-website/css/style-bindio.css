@@ -49,6 +49,21 @@
 	padding: 40px;
 }
 
+/* KICKSTARTER POGA */
+.navbar .button.btn-green {
+	background-color: #67b346;
+	color: #fff !important;
+	border: solid 2px #67b346;
+}
+.navbar .button.btn-green:hover {
+	background-color: #29D26D;
+	text-decoration: none;
+}
+.navbar .button.btn-green:focus {
+	background-color: #29D26D;
+	text-decoration: none;
+}
+
 #how-it-works {
 	padding-top: 85px;
 	min-height: 600px;

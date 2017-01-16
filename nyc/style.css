@@ -5,12 +5,20 @@
 
 html {
   background-color: #eaeaea;
+  font-family: 'Space Mono', monospace;
 }
 
 h2 {
   text-align: center;
   margin: 80px 0;
   color: #555;
+}
+
+.subtext {
+  font-size: 12px;
+  color: #777;
+  text-align: right;
+  margin: 8px 0;
 }
 
 .container {
@@ -30,5 +38,20 @@ h2 {
 
 video {
   margin: 0 auto;
-  border-radius: 0px;
+  border-radius: 25px;
+}
+
+.links-center {
+  text-align: center;
+  margin: 10px 0 100px 0;
+}
+
+#stamp {
+  margin: 0 auto;
+  display: block;
+}
+
+.emoji {
+  width: 26px;
+  height: 26px;
 }
