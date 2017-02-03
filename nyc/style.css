@@ -36,7 +36,7 @@ h2 {
   margin-bottom: 80px;
 }
 
-video {
+video, .gif {
   margin: 0 auto;
   border-radius: 25px;
 }
