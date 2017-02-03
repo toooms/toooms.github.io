@@ -39,6 +39,9 @@ h2 {
 video, .gif {
   margin: 0 auto;
   border-radius: 25px;
+  background-color: yellow;
+  width: 100%;
+  height: auto;
 }
 
 .links-center {
