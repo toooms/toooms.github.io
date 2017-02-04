@@ -29,7 +29,7 @@
     <h2 style="margin: 80px 0;"><img class="emoji" src="emoji-plane@2x.png" alt="emoji-plane"> nwyrk <img class="emoji" src="emoji-usa@2x.png" alt="emoji-usa"> nwyrk</h2>
 
     <div class="video-container">
-      <img class="gif" data-original="renders2/nyc-1.gif" alt="" width="100%" height="auto">
+      <img class="gif" data-original="renders2/nyc-1" alt="" width="100%" height="auto">
       <p class="subtext">1:55 PM, Nov 16th, 2016. Brooklyn Bridge</p>
     </div>
     <div class="video-container">
@@ -133,6 +133,7 @@
 <script>
 		(function() {
 			new LazyLoad({
+        threshold: 500,
 				elements_selector: ".gif"
 			});
 		}());
